@@ -1,0 +1,25 @@
+1448974627.V802I2021eM630812.localhost.localdomain
+Return-Path: <>
+X-Original-To: root@krizna.com
+Delivered-To: root@krizna.com
+Received: from [192.168.160.136] (localhost [IPv6:::1])
+	by mail.krizna.com (Postfix) with ESMTP id 7D52540F53
+	for <root@krizna.com>; Tue,  1 Dec 2015 04:57:07 -0800 (PST)
+Received: from 192.168.160.136
+        (SquirrelMail authenticated user student4)
+        by 192.168.160.136 with HTTP;
+        Tue, 1 Dec 2015 04:57:07 -0800
+Message-ID: <d974fe87be405d4225e011c72a124532.squirrel@192.168.160.136>
+Date: Tue, 1 Dec 2015 04:57:07 -0800
+Subject: TEstSomething
+From: student4@krizna.com
+To: root@krizna.com
+User-Agent: SquirrelMail/1.4.22-4.el6
+MIME-Version: 1.0
+Content-Type: text/plain;charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+hey root whats up
+

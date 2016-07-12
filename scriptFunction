@@ -1,0 +1,9 @@
+#!/bin/bash
+
+help(){
+        echo "$0"
+	echo "$1 is using this argument"
+	echo "$2"
+}
+
+help "Display Somehing" 3

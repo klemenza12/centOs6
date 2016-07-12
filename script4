@@ -1,0 +1,11 @@
+echo "something"
+if [ "$1"="ls -l" ] && [ "$2"="ls" ]
+   then
+      echo "argumentite ne sa kur i guz a sa $1 i $2"	
+      if [ "$1"!="" ]
+	then
+		echo "$0 thats a fucking test $1"
+	        ls -l
+      fi
+fi
+exit 5       

@@ -1,0 +1,13 @@
+case "$1" in
+	start)
+	   echo "we are starting"
+	   ;;
+        stop)
+           echo "we are stopping"
+           ;;
+	cancel)
+	   echo "we are canceling"
+           ;;
+   	*)
+         echo "another"
+esac

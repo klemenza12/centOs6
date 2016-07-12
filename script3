@@ -1,0 +1,7 @@
+# /bin/bash
+PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+ARHDIR=$1
+find $ARHDIR
+tar czvf /tmp/$ARHDIR.tar.gz $ARHDIR
+
+

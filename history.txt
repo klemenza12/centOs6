@@ -1,0 +1,1000 @@
+    4  nano /etc/vsftpd/vsftpd.conf 
+    5  service vsftp restart
+    6  service vsftpd restart
+    7  yum install ftp
+    8  ftp connect klemenza@192.168.160.136
+    9  ftp 192.168.160.136
+   10  dhclient
+   11  ifconfig
+   12  dhclient eth0
+   13  inconfig eth0 down
+   14  dhclient eth0
+   15  ifconfig eth0 up
+   16  ifconfig
+   17  dhclient eth0
+   18  arp -n
+   19  ftp 192.168.160.2
+   20  ftp 192.168.160.1
+   21  ftp 192.168.160.136
+   22  iptables -L -n -v
+   23  iptables -L -n
+   24  iptables -L
+   25  nc -l 1029
+   26  yum install nc
+   27  nc -l 1029
+   28  ps -afux |grep tty
+   29  ps -ax |grep tty
+   30  kill -9 10765
+   31  lsmod
+   32  lsmod | grep l1000
+   33  lsmod | grep l 1000
+   34  lsmod | grep -l 1000
+   35  lsmod | grep e1000
+   36  cd /etc/sysconfig/network-scripts/
+   37  ls
+   38  cat ifcfg-eth0 
+   39  ethtool eth0
+   40  netstat -rn
+   41  man ifdown
+   42  eth0 down
+   43  eth0 ifdown
+   44  ifdown eth0
+   45  ping google.bg
+   46  ping www.google.bg
+   47  ping www.google.com
+   48  ifup eth0
+   49  ping www.google.com
+   50  ping www.openedge.xyz
+   51  cat /etc/resolv.conf 
+   52  dmesg 
+   53  dmesg | grep eth
+   54  netstat
+   55  route -n
+   56  nmap
+   57  yum install nmap
+   58  nmap
+   59  arp -n
+   60  tcpdump -n -v 
+   61  cat /etc/host.conf 
+   62  cat /etc/hosts
+   63  traceroute -n www.openedge.xyz
+   64  netstat -na
+   65  ps -afux |grep vsftpd
+   66  netstat -na |grep ftp
+   67  netstat -na |grep vsftpd
+   68  netstat -na | grep vsftpd
+   69  netstat | grep vsftpd
+   70  telnet localhost 25
+   71  telnet localhost 21
+   72  promenliva1 = "stoinost3"
+   73  $promenliva1 = "stoinost3"
+   74  $promenliva1="stoinost3"
+   75  promenliva1="stoinost3"
+   76  echo $promenliva1
+   77  prom1="stoinost1"
+   78  prom2="stoinost2"
+   79  prom3="stoinost3"
+   80  echo $prom1     $prom2 $prom3
+   81  echo $prom1 $prom2 $prom3
+   82  export prom1
+   83  echo $prom1 $prom2 $prom3
+   84  set
+   85  env
+   86  printenv
+   87  set | grep prom
+   88  env | grep email
+   89  env | grep MAIL
+   90  cat $MAIL
+   91  echo $MAIL
+   92  echo $PATH
+   93  echo $SHELL
+   94  echo $TERM
+   95  env | grep USER
+   96  echo $USER
+   97  echo $LOGNAME
+   98  alias list_home='ls -l/'
+   99  list_home
+  100  alias list_home= 'ls -l/'
+  101  list_home
+  102  alias list_home= 'ls -l'
+  103  alias list_home='ls -l'
+  104  list_home
+  105  unalias ls
+  106  ls -l
+  107  list_home
+  108  less /etc/bashrc 
+  109  cat /etc/bashrc 
+  110  nano /etc/bashrc 
+  111  list_kur
+  112  nano /etc/bashrc 
+  113  list_kur
+  114  nano /etc/bashrc 
+  115  list_kur
+  116  list_home
+  117  list_kur
+  118  exit
+  119  OR
+  120  3
+  121  #
+  122  list_kur
+  123  nano /etc/inputrc
+  124  ab
+  125  nano /etc/inputrc
+  126  find / roundcube
+  127  yum search roundcube
+  128  yum search squirrelmail
+  129  yum search postfix
+  130  yum search bind9
+  131  yum search bind
+  132  date +8k
+  133  date + 8k
+  134  date + 8
+  135  date
+  136  cd
+  137  ls
+  138  cd ..
+  139  ls
+  140  cd home/
+  141  ls
+  142  nano script1
+  143  bash script1 
+  144  nano script1
+  145  bash script1 
+  146  nano script1
+  147  bash script1 
+  148  chmod u+x script1 
+  149  ./script1 
+  150  export PATH="$PATH:/root"
+  151  script1
+  152  echo $PATH
+  153  script1
+  154  export PATH="$PATH:/root/home"
+  155  script1
+  156  echo $PATH
+  157  cd ..
+  158  ls
+  159  cd home/
+  160  ls
+  161  script
+  162  find / script1
+  163  ./script1 
+  164  cd ..
+  165  ls
+  166  cd home/
+  167  cd bin
+  168  cd ..
+  169  ls
+  170  cd
+  171  ls
+  172  cd ..
+  173  ls
+  174  cd boot/
+  175  ls
+  176  cd ..
+  177  ls
+  178  cd bin/
+  179  ls
+  180  cd ../usr/
+  181  ls
+  182  ./script1
+  183  ../script1
+  184  cd 
+  185  cd ..
+  186  cd home/
+  187  ls
+  188  cat script1 
+  189  bash script1 
+  190  yum install postfix
+  191  yum install cyrus-sasl
+  192  yum install cyrus-imapd
+  193  nano /etc/postfix/main.cf
+  194  nano /etc/postfix/master.cf 
+  195  service postfix start
+  196  service saslauthd start
+  197  chkconfig --level 235 postfix on
+  198  chkconfig --level 235 saslauthd on
+  199  telnet localhost
+  200  telnet localhost 25
+  201  man mutt
+  202  echo "hi" | mutt -s "subject" klemenza12@gmail.com
+  203  yum install dovecot
+  204  nano /etc/dovecot/dovecot.conf 
+  205  service dovecot start
+  206  chkconfig --level 235 dovecot on
+  207  telnet localhost 110
+  208   rpm -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/6/i386/epel-release-6-8.noarch.rpm
+  209  yum install squirrelmail
+  210  perl /usr/share/squirrelmail/config/conf.pl
+  211  nano /etc/httpd/conf.d/squirrelmail.conf 
+  212  service httpd start
+  213  chkconfig --level 235 httpd on
+  214  ifconfig
+  215  links http://192.168.160.136/webmail
+  216  links http://192.168.160.136
+  217  links http://192.168.160.136/webmail.php
+  218  links http://192.168.160.136/webmail/
+  219  nano /etc/httpd/conf.d/squirrelmail.conf 
+  220  nano /etc/httpd/conf/httpd.conf 
+  221  service httpd restart
+  222  nano /etc/httpd/conf.d/squirrelmail.conf 
+  223  service squirellmail restart
+  224  service httpd restart
+  225  ifconfig
+  226  links 192.168.160.136
+  227  links 192.168.160.136/webmail
+  228  perl /usr/share/squirrelmail/config/conf.pl
+  229  service httpd restart
+  230  service dovecot restart
+  231  telnet localhost 110
+  232  links 192.168.160.136/webmail
+  233  netstat -tap
+  234  nano /etc/dovecot/dovecot.conf 
+  235  service dovecot restart
+  236  nano /etc/httpd/conf.d/squirrelmail.conf 
+  237  service httpd restart
+  238  links 192.168.160.136/webmail
+  239  infconfig
+  240  ifconfig
+  241  ping krizna.com
+  242  service dovecot restart
+  243  service squirrelmail restart
+  244  service postfix restart
+  245  service httpd start
+  246  ping localhost
+  247  links 192.168.160.136/webmail
+  248  links 192.168.160.136
+  249  nano /etc/httpd/conf.d/squirrelmail.conf 
+  250  links 192.168.160.136
+  251  links 192.168.160.136/webmail
+  252  service httpd restart
+  253  links 192.168.160.136/webmail
+  254  ls /etc/imapd.conf 
+  255  nano /etc/imapd.conf 
+  256  nano /etc/squirrelmail/config.php 
+  257  nano /etc/dovecot/dovecot.conf 
+  258  service httpd restart
+  259  perl /usr/share/squirrelmail/config/conf.pl
+  260  service httpd restart
+  261  perl /usr/share/squirrelmail/config/conf.pl
+  262  service httpd restart
+  263  perl /usr/share/squirrelmail/config/conf.pl
+  264  service httpd restart
+  265  cat /var/log/maillog/
+  266  cat /var/log/maillog
+  267  cd
+  268  ls
+  269  cd ..
+  270  ls
+  271  cd usr/
+  272  ls
+  273  cd ..
+  274  ls
+  275  cd home/
+  276  ls
+  277  ls klemenza/
+  278  cd klemenza/
+  279  ls
+  280  ls mail/
+  281  ls -l mail/
+  282  chmod mail/ u+rwx,g+rwx,o+rx
+  283  chmod mail u+rwx,g+rwx,o+rx
+  284  chmod -R 0777 mail/
+  285  ls -l mail/
+  286  service httpd restart
+  287  cd
+  288  cat /var/spool/mail/klemenza 
+  289  car /var/log/maillog
+  290  cat /var/log/maillog
+  291  chmod -R 0777 mail/
+  292  ls
+  293  cd ..
+  294  ls
+  295  cd home/
+  296  ls
+  297  cd student/
+  298  ls
+  299  chmod -R 0777 mail/
+  300  ls -l mail/
+  301  service dovecot restart
+  302  nano /etc/squirrelmail/config
+  303  nano /etc/squirrelmail/config.php 
+  304  service dovecot restart
+  305  service httpd restart
+  306  nano /etc/squirrelmail/config.php 
+  307  perl /usr/share/squirrelmail/config/conf.pl
+  308  service dovecot restart
+  309  service httpd restart
+  310  linkd 192.168.160.136/webmail
+  311  links 192.168.160.136/webmail
+  312  perl /usr/share/squirrelmail/config/conf.pl
+  313  links 192.168.160.136/webmail
+  314  service httpd restart
+  315  telnet localhost 25
+  316  cat /var/log/maillog
+  317  nano /etc/postfix/main.cf
+  318  service postfix restart
+  319  telnet localhost 25
+  320  links 192.168.160.136/webmail
+  321  cat /var/spool/mail/
+  322  ls /var/spool/mail/root 
+  323  cat /var/spool/mail/root 
+  324  ls -l /var/spool/postfix/
+  325  cd /var/spool/mail/
+  326  ls
+  327  cd ..
+  328  ls
+  329  cd postfix/
+  330  ls
+  331  cd
+  332  cd /var/spool/postfix/
+  333  ls
+  334  cdddd maildrop/
+  335  cd maildrop/
+  336  ls
+  337  su klemenza
+  338  yum install mysql-server
+  339  msql
+  340  mysql
+  341  yum install mysql-client
+  342  etc/init.d/mysql start
+  343  services mysql start
+  344  service mysql start
+  345  service mysqld start
+  346  mysql
+  347  crontab -e
+  348  crontab -l
+  349  ls -l /etc/crontab
+  350  mcedit pipi
+  351  mc
+  352  pwd
+  353  cd 
+  354  ls
+  355  cd ..
+  356  ls
+  357  cd home/
+  358  la
+  359  ls
+  360  pwd
+  361  nano script1
+  362  ./script1
+  363  ls -l
+  364  bash script1
+  365  export PATH="$PATH:/root"
+  366  echo $PATH
+  367  scrpit1
+  368  script1
+  369  export PATH="$PATH:/root/home"
+  370  scrpit1
+  371  script1
+  372  bash script1
+  373  ls -l
+  374  pwd
+  375  export PATH="$PATH:/home"
+  376  chmod 666 script1 
+  377  script1
+  378  chmod 777 script1 
+  379  script1
+  380  yum install crontab
+  381  crontab -l
+  382  exec script1 
+  383  ls
+  384  cd ..
+  385  ls
+  386  touch test
+  387  ls
+  388  nano test
+  389  chmod 777 test 
+  390  nano test
+  391  rm -rf test 
+  392  touch test
+  393  ls
+  394  touch test.txt
+  395  touch test
+  396  su student1
+  397  cd
+  398  sudo student
+  399  exit
+  400  ls
+  401  cd
+  402  ls
+  403  cd ..
+  404  ls
+  405  cd home/
+  406  ls
+  407  nano scriptWhile
+  408  chmod 777 scriptWhile 
+  409  ./ scriptWhile test
+  410  ./scriptWhile test
+  411  nano scriptWhile
+  412  ./scriptWhile test
+  413  nano scriptWhile
+  414  ./scriptWhile test
+  415  ls
+  416  ./scriptWhile ./test
+  417  ./scriptWhile test
+  418  nano scriptWhile
+  419  ./scriptWhile test
+  420  rm test
+  421  ./scriptWhile test
+  422  rm test
+  423  ./scriptWhile test
+  424  nano scriptWhile
+  425  ./scriptWhile test
+  426  nano scriptWhile
+  427  ./scriptWhile test
+  428  rm test
+  429  ./scriptWhile test
+  430  nano scriptWhile
+  431  ./scriptWhile test
+  432  nano scriptWhile
+  433  ./scriptWhile test
+  434  man test
+  435  ./scriptWhile test
+  436  nano scriptWhile
+  437  ./scriptWhile test
+  438  man test
+  439  ./scriptWhile test
+  440  nano scriptWhile
+  441  ./scriptWhile test
+  442  nano scriptWhile
+  443  ./scriptWhile test
+  444  nano scriptWhile
+  445  ./scriptWhile test
+  446  nano scriptWhile
+  447  ./scriptWhile test
+  448  bash -x scriptWhile test
+  449  nano scriptWhile
+  450  bash -x scriptWhile test
+  451  nano scriptWhile
+  452  bash -x scriptWhile test
+  453  nano scriptWhile
+  454  bash -x scriptWhile test
+  455  nano scriptWhile
+  456  bash -x scriptWhile test
+  457  nano scriptWhile
+  458  bash -x scriptWhile test
+  459  nano scriptWhile
+  460  bash -x scriptWhile test
+  461  nano scriptWhile
+  462  bash -x scriptWhile test
+  463  ls
+  464  rm -rf test test.txt 
+  465  bash -x scriptWhile test
+  466  top -d s -b
+  467  top -d 5 -b
+  468  nohup top -d 5 -b
+  469  nano scriptWhile
+  470  nano scriptWhile2
+  471  chmod 777 scriptWhile2
+  472  bash -x scriptWhile2 10
+  473  bash -x scriptWhile2 .
+  474  bash -x scriptWhile2 3
+  475  bash -x scriptWhile2 "3"
+  476  nano scriptWhile2
+  477  bash -x scriptWhile2 "3"
+  478  bash -x scriptWhile2 "."
+  479  bash -x scriptWhile2 " . "
+  480  nano scriptWhile2
+  481  bash -x scriptWhile2 "3" 5
+  482  nano scriptWhile2
+  483  bash -x scriptWhile2 "3" 5
+  484  nano scriptWhile2
+  485  bash -x scriptWhile2 "3" 5
+  486  nano scriptWhile2
+  487  bash -x scriptWhile2 "3" 5
+  488  nano scriptWhile2
+  489  bash -x scriptWhile2 "3" 5
+  490  nano scriptWhile2
+  491  bash -x scriptWhile2 "3" 5
+  492  bash -x scriptWhile2 "c" 5
+  493  nano scriptWhile2
+  494  bash -x scriptWhile2 "c" 5
+  495  nano scriptUntil
+  496  chmod 777 scriptUntil 
+  497  bash scriptUntil .
+  498  bash scriptUntil 34
+  499  nano scriptUntil
+  500  ./scriptUntil 
+  501  ./scriptUntil 8
+  502  bash scriptUntil 8
+  503  bash scriptUntil .
+  504  bash scriptUntil "8"
+  505  bash scriptUntil "8999"
+  506  bash scriptUntil "."
+  507  nano scriptUntil
+  508  bash scriptUntil "."
+  509  bash scriptUntil "8999"
+  510  nano scriptUntil
+  511  bash scriptUntil "8999"
+  512  nano scriptUntil
+  513  bash scriptUntil 8999
+  514  nano scriptUntil
+  515  bash scriptUntil 8999
+  516  bash scriptUntil .
+  517  bash scriptUntil 2
+  518  nano scriptWhile2
+  519  bash scriptWhile2 3 4
+  520  nano scriptWhile2
+  521  bash scriptWhile2 3
+  522  bash scriptWhile2 c
+  523  nano scriptWhile2
+  524  bash scriptWhile2 c
+  525  bash scriptWhile2 "c"
+  526  bash scriptWhile2 21
+  527  nano scriptWhile2
+  528  bash scriptWhile2 21
+  529  nano scriptWhile2
+  530  bash scriptWhile2 21
+  531  nano scriptFor
+  532  chmod 777 scriptFor 
+  533  bash scriptFor 1 9
+  534  nano scriptFor
+  535  bash scriptFor 1 9
+  536  bash scriptFor 9 9
+  537  nano scriptFor
+  538  bash scriptFor 9 9
+  539  bash scriptFor 1 9
+  540  nano scriptFor
+  541  bash scriptFor 1 9
+  542  nano scriptFor
+  543  bash scriptFor 1 9
+  544  nano scriptFor
+  545  bash scriptFor 1 9
+  546  nano scriptFor
+  547  bash scriptFor 1 9
+  548  nano scriptFor
+  549  bash scriptFor 1 9
+  550  nano scriptFor
+  551  bash scriptFor 1 9
+  552  nano scriptFor
+  553  bash scriptFor 1 9
+  554  nano scriptFor
+  555  bash scriptFor 1 9
+  556  nano scriptFor
+  557  bash scriptFor 1 9
+  558  nano scriptFor
+  559  bash scriptFor 1 9
+  560  nano scriptFor
+  561  bash scriptFor 1 9
+  562  nano scriptFor
+  563  bash scriptFor 1 9
+  564  nano scriptFor
+  565  bash scriptFor 1 9
+  566  nano scriptFor
+  567  bash scriptFor 1 9
+  568  nano scriptFor
+  569  bash scriptFor 1 9
+  570  for i in /etc/h*; ls-ld echo "$i"; done
+  571  for i in /etc/h*; ls-ld "$i"; done
+  572  for i in /etc/h*; 'ls-ld' "$i"; done
+  573  for i in /etc/h*; echo "$i"; done
+  574  for i in /etc/h*; "$i"; done
+  575  for i in /etc/h*; $i; done
+  576  for i in /etc/h* ; $i; done
+  577  for i in /etc/h*; ls -ld  $i; done
+  578  for i in /etc/h*; ls -ld echo $i; done
+  579  for i in /etc/h* ls -ld echo $i; done
+  580  for i in /etc/h* ls -ld echo $i done;  quit
+  581  for i in /etc/h* ls -ld echo "$i" done
+  582  for i in /etc/h* do ls -ld echo "$i" done; ;
+  583  for i in /etc/h* do ls -ld echo "$i" done exit 0; for i in /etc/h* do ls -ld echo "$i" done exit 0
+  584  for i in /etc/h* do ls -ld echo "$i" done; exit 0
+  585  for i in /etc/h* do ls -ld echo "$i" done ";" ; 
+  586  for i in /etc/h* do ls -l echo "$i" done ";"; 
+  587  for i in "/etc/h*" do ls -ld echo "$i" done ";" ; 
+  588  for i in "/etc/h*" do ls -ld echo "$i" done
+  589  for i in 3 do echo "$i" done
+  590  for [ i in 3 ] do echo "$i" done
+  591  for i in 3; do; echo "$i"; done;
+  592  for i in 3; do; echo "$i"; done
+  593  for i in 3; do; echo "$i" done
+  594  for i in 3; do echo "$i" done; ;
+  595  for i in 3 do echo "$i" done
+  596  for i in 3; do echo "$i"; done
+  597  for i in 1..3; do echo "$i"; done
+  598  for i in {1..3}; do echo "$i"; done
+  599  for i in /etc/h*; do ls -ld; echo "$i"; done
+  600  for i in "seq 1 100"; do ls -ld; echo "$i"; done
+  601  for i in {seq 1 100}; do ls -ld; echo "$i"; done
+  602  for i in {seq 1..100}; do ls -ld; echo "$i"; done
+  603  for i in "seq 1 100"; do ls -ld; echo "$i"; done
+  604  for i in " seq 1 100 "; do ls -ld; echo "$i"; done
+  605  for i in "{seq 1 100}"; do ls -ld; echo "$i"; done
+  606  for i in "${seq 1 100}"; do ls -ld; echo "$i"; done
+  607  for i in ${seq 1 100}; do ls -ld; echo "$i"; done
+  608  for i in seq 1 100; do ls -ld; echo "$i"; done
+  609  cat scriptFor 
+  610  for i in (seq 1 100); do ls -ld; echo "$i"; done
+  611  for i in $(seq 1 100); do ls -ld; echo "$i"; done
+  612  for i in "$(seq 1 100)"; do ls -ld; echo "$i"; done
+  613  for i in $(seq 1 100); do ls -ld; echo "$i"; done
+  614  nano scriptFunction
+  615  ./scriptFunction
+  616  chmod 777 scriptFunction 
+  617  ./scriptFunction
+  618  nano scriptFunction
+  619  ./scriptFunction
+  620  nano scriptFunction
+  621  ./scriptFunction
+  622  mail
+  623   mail -s "Mail1" student1
+  624  mail
+  625  mailq
+  626   mail -s "Mail1" klemenza
+  627   mail -s "Mail1" klemenza@krizna.com
+  628  mail root
+  629  maill
+  630  mail
+  631  su student1
+  632  useradd student4
+  633  passwd student4
+  634   mail -s "Mail1" student4
+  635  mail
+  636  mqilq
+  637  mailq
+  638  mail
+  639  mail root
+  640  ls
+  641  cd
+  642  ls
+  643  cat /var/mail/root 
+  644  ls
+  645  cd mail/
+  646  ls
+  647  cd new
+  648  ls
+  649  cat 1448626253.V802I20bd8M748164.localhost.localdomain
+  650  ls
+  651  ls -l
+  652  cat 1448974627.V802I2021eM630812.localhost.localdomain 
+  653  mail
+  654  man sendmail
+  655  sendmail -bp
+  656  cat /etc/aliases
+  657  cat /etc/aliases.db 
+  658  hosname
+  659  host
+  660  hostname
+  661  echo 1448974627.V802I2021eM630812.localhost.localdomain >>testmail 
+  662  ls
+  663  cat testmail 
+  664  cat 1448974627.V802I2021eM630812.localhost.localdomain >>testmail 
+  665  cat testmail 
+  666  echo testmail 5
+  667  echo testmail
+  668  cat testmail 5
+  669  cat testmail -5
+  670  cat testmail | cut -f 
+  671  cat testmail | cut -f 2-
+  672  cat testmail | cut -f 10-
+  673  cat testmail | cut -f 1-
+  674  cat testmail | cut -f 20-
+  675  cat testmail | cut -f 20
+  676  cat testmail | cut -f 20- -d " "
+  677  cat testmail | cut -f 2- -d " "
+  678  cat testmail | grep "^From:"
+  679  cat testmail | grep "^From:" | cut -f 2- -d ""
+  680  cat testmail | grep "^From:" | cut -f 2- -d " "
+  681  cat testmail | grep "@" 
+  682  cat testmail | grep "^From:" | cut -f 2- -d " "
+  683  cat testmail | grep "^To:" | cut -f 2- -d " "
+  684  cat testmail | grep "^Date:" | cut -f 2- -d " "
+  685  ls
+  686  cd ..
+  687  cd
+  688  cd ../home/
+  689  ls
+  690  nano scriptMail
+  691  chmod 777 scriptMail 
+  692  cd
+  693  ls
+  694  pwd
+  695  cp ./mail/new/testmail ../home/
+  696  ls -l ../home/
+  697  cd ../home/
+  698  dir
+  699  ./scriptMail testmail 
+  700  chmod 777 scriptMail 
+  701  ./scriptMail testmail 
+  702  chmod 777 testmail 
+  703  ./scriptMail testmail 
+  704  bash -x scriptMail testmail 
+  705  bash -x scriptMail "testmail" 
+  706  bash -x scriptMail testmail 
+  707  cat testmail 
+  708  nano scriptMail 
+  709  bash -x scriptMail echo testmail 
+  710  bash -x scriptMail "echo testmail" 
+  711  echo testmail | ./scriptMail 
+  712  echo testmail | bash scriptMail 
+  713  cat testmail | bash scriptMail 
+  714  nano scriptMail 
+  715  cat testmail | bash scriptMail 
+  716  nano scriptMail 
+  717  cat testmail | bash scriptMail 
+  718  cat testmail 
+  719  nano scriptMail 
+  720  cat testmail | bash scriptMail 
+  721  cat testmail 
+  722  nano scriptMail 
+  723  cat testmail 
+  724  nano scriptMail 
+  725  cat testmail | bash scriptMail 
+  726  nano scriptMail 
+  727  echo $line | grep "^Importance: Normal "
+  728  echo testmail | grep "^Importance: Normal "
+  729  cat testmail | grep "^Importance: Normal "
+  730  cat testmail | grep "^Importance: Normal"
+  731  cat testmail | grep "^Importance: Normal" | cut -f
+  732  cat testmail | grep "^Importance: Normal" | cut -f -4
+  733  cat testmail | grep "^Importance: Normal" | cut -f -8
+  734  cat testmail | grep "^Importance: Normal" | cut -f 8-
+  735  cat testmail | grep "^Importance: Normal" | cut -f 8- -d
+  736  cat testmail | grep "^Importance: Normal" | cut -f 8- -d " "
+  737  cat testmail | grep "^Importance: Normal" | cut -f 2- -d " "
+  738  cat testmail | grep "^Importance: Normal" | cut -f 45- -d " "
+  739  cat testmail | grep "^Importance: Normal"
+  740  cat testmail 
+  741  cat testmail tail -n 5
+  742  cat testmail tail -5
+  743  cat testmail tail 5
+  744  cat testmail | tail 5
+  745  cat testmail tail 5
+  746  cat testmail tail -5
+  747  tail testmail 
+  748  tail 5 testmail 
+  749  tail -5 testmail 
+  750  tail -2 testmail 
+  751  nano scriptMail 
+  752  cat testmail | bash scriptMail 
+  753  nano scriptMail 
+  754  cat testmail | bash scriptMail 
+  755  nano scriptMail 
+  756  cat testmail | bash scriptMail 
+  757  nano scriptMail 
+  758  cat testmail | bash scriptMail 
+  759  nano scriptMail 
+  760  cat testmail | bash scriptMail 
+  761  nano scriptMail 
+  762  cat testmail | bash scriptMail 
+  763  nano scriptMail 
+  764  cat testmail | bash scriptMail 
+  765  nano scriptMail 
+  766  cat testmail | bash scriptMail 
+  767  nano scriptMail 
+  768  cat testmail | bash scriptMail 
+  769  nano scriptMail 
+  770  cat testmail | bash scriptMail 
+  771  nano scriptMail 
+  772  cat testmail | bash scriptMail 
+  773  nano scriptMail 
+  774  cat testmail | bash scriptMail 
+  775  nano scriptMail 
+  776  cat testmail | bash scriptMail 
+  777  nano scriptMail 
+  778  cat testmail | bash scriptMail 
+  779  nano scriptMail 
+  780  cat testmail | bash scriptMail 
+  781  nano scriptMail 
+  782  ls -l
+  783  cat testmail | bash scriptMail 
+  784  nano scriptMail 
+  785  cat testmail | bash scriptMail 
+  786  yum search mysql-server
+  787  yum install mysql-server.x86_64 
+  788  /etc/init.d/mysqld start
+  789  mysql
+  790  echo mysql -u root
+  791  echo SQL | mysql -u root
+  792  echo $SQL | mysql -u root
+  793  echo $SQL | mysql -u root 
+  794  echo $SQL show databases;
+  795  echo $SQL | mysql show databases;
+  796  echo $SQL | mysql show databases
+  797  echo $SQL | mysql -u root show databases
+  798  echo $SQL | mysql -u root; show databases;
+  799  echo $SQL | mysql -u root; show databases
+  800  echo $SQL | mysql -u root show databases
+  801  echo $SQL | mysql -u root show databases;
+  802  echo "show databases;" | mysql -u root
+  803  echo "show databases;" | "use mta;" | mysql -u root
+  804  echo "show databases;" "use mta;" | mysql -u root
+  805  echo "show databases;" "use mta;" "show tables;" | mysql -u root
+  806  echo "show databases;" "use mta;" "show tables;" "show * from mail_stat;" | mysql -u root
+  807  echo "show databases;" "use mta;" "show tables;" "select * from mail_stat;" | mysql -u root
+  808  echo "select * from mail_stat;" | mysql -u root
+  809  echo "use mta;"  "select * from mail_stat;" | mysql -u root
+  810  echo "use mta;"  "update mail_stat set msgid='353824' where id=1;" | mysql -u root
+  811  echo "use mta;"  "select * from mail_stat;" | mysql -u root
+  812  msql
+  813  mysql
+  814  nestat -natup | grep mysql
+  815  netsat -natup | grep mysql
+  816  netstat -natup | grep mysql
+  817  echo | grep -A 1 eth0
+  818  echo | grep -A 1 eth0 | grep intel
+  819  echo | grep -A 1 eth0
+  820  echofdsfsdfs
+  821  echo fdsfsdfs
+  822  echo ifconfig | grep -A 1 eth0 | grep inet | cut -f 2 -d
+  823  echo ifconfig | grep -A 1 eth0 | grep inet | cut -f 2
+  824  echo $(ifconfig | grep -A 1 eth0 | grep inet | cut -f 2)
+  825  echo $(ifconfig | grep -A 1 eth0 | grep inet | cut -f 2 ":")
+  826  echo $(ifconfig | grep -A 1 eth0 | grep inet | cut -f 2 -d ":")
+  827  echo $(ifconfig | grep -A 1 eth0 | grep inet | cut -f 2 -d ":" | cut -f 1 -d " ")
+  828  ls
+  829  nano scriptMYSQL
+  830  chmod 777 scriptMYSQL 
+  831  bash -x scriptMYSQL 
+  832  bash -x testmail |  scriptMYSQL 
+  833  bash -x testmail | scriptMYSQL 
+  834  nano scriptMYSQL
+  835  bash -x testmail | scriptMYSQL 
+  836  cat testmail 
+  837  bash -x testmail | scriptMYSQL 
+  838  cat testmail | bash scriptMail 
+  839  cat testmail | scriptMYSQL 
+  840  cat testmail | ./scriptMYSQL 
+  841  nano scriptMYSQL
+  842  cat testmail | ./scriptMYSQL 
+  843  cat ../tmp/prog1.log 
+  844  nano scriptMYSQL
+  845  cat testmail | ./scriptMYSQL 
+  846  cat ../tmp/prog1.log 
+  847  nano scriptMYSQL
+  848  cat testmail | ./scriptMYSQL 
+  849  cat ../tmp/prog1.log 
+  850  nano scriptMYSQL
+  851  cat testmail | ./scriptMYSQL 
+  852  nano scriptMYSQL
+  853  cat testmail | ./scriptMYSQL 
+  854  cat ../tmp/prog1.log 
+  855  nano scriptMYSQL
+  856  service apache2 start
+  857  service apache2 stop
+  858  service httpd stop
+  859  service httpd start
+  860  top
+  861  service --status-all
+  862  ls
+  863  ls -l
+  864  nano scriptMYSQL 
+  865  mysql
+  866  mysql -u
+  867  mysql -u root -p
+  868  bashrc script1
+  869  bash script1
+  870  bash scriptFor 
+  871  cat scriptFunction 
+  872  bash scriptFunction 23
+  873  nano scriptFunction 
+  874  bash scriptFunktion
+  875  bash scriptFunction 
+  876  bash scriptFunction 1
+  877  bash scriptFunction 1 1 2
+  878  mc
+  879  ls
+  880  cd
+  881  ls
+  882  cd
+  883  cd /
+  884  ls
+  885  cd mnt/
+  886  ls
+  887  cd hgfs/
+  888  ls
+  889  cd ../../opt/
+  890  ls
+  891  cd rh
+  892  ls
+  893  cd ../../media/
+  894  ls
+  895  cd..
+  896  cde ..
+  897  cd
+  898  ls
+  899  cd .
+  900  ls
+  901  cd /
+  902  ls
+  903  dd if=/media/* of=/home/hom11/pons.iso bs=1024 count=1
+  904  dd if=/media* of=/home/hom11/pons.iso bs=1024 count=1
+  905  dd if=/media/ of=/home/hom11/pons.iso bs=1024 count=1
+  906  dd if=/media of=/home/hom11/pons.iso bs=1024 count=1
+  907  dd if=/media/Pons/* of=/home/hom11/pons.iso bs=1024 count=1
+  908  dd if=/media/Pons of=/home/hom11/pons.iso bs=1024 count=1
+  909  dd if=/media/Pons/ of=/home/hom11/pons.iso bs=1024 count=1
+  910  dd if=/media/Pons/ of=/home/hom11/pons.iso 
+  911  dd if=/media/Pons/* of=/home/hom11/pons.iso 
+  912  dd if=/media/Pons* of=/home/hom11/pons.iso 
+  913  dd if=/media/ of=/home/hom11/pons.iso 
+  914  dd if=media/* of=/home/hom11/pons.iso 
+  915  dd if=media/ of=/home/hom11/pons.iso 
+  916  dd if=media/Pons/ of=/home/hom11/pons.iso 
+  917  dd if=media/Pons/* of=/home/hom11/pons.iso 
+  918  dd if=media/* of=/home/hom11/pons.iso 
+  919  dd if="media/" of=/home/hom11/pons.iso 
+  920  dd if=/media/Pons/ of=/home/hom11/pons.iso 
+  921  ls
+  922  cd dev/
+  923  ls
+  924  cd cdrom1 
+  925  cat cdrom1 
+  926  cd ..
+  927  ls
+  928  dd if=/dev/cdrom1 of=/home/hom11/pons.iso 
+  929  dd if=/dev/cdrom1 of=/home/hom11/pons.iso bs=1024 conv=sync,notrunc
+  930  dd if=/dev/cdrom1 of=/home/hom11/pons.iso bs=1024 conv=sync,noerror
+  931  dd if=/dev/cdrom1 of=/home/hom11/pons.iso bs=1024k conv=notrunc,noerror
+  932  cd home/hom11/
+  933  ls
+  934  rm pons.iso 
+  935  ls
+  936  yum search torrent
+  937  yum install ctorrent.x86_64
+  938  ctorrent
+  939  yum search torrent
+  940  yum install ktorrent.x86_64
+  941  yum search mpeg4
+  942  yum install libmp4v2.x86_64
+  943  yum search mpeg4
+  944  yum install libmp4v2.x86_64
+  945  yum install libm
+  946  yum search h264
+  947  yum install libmediainfo.i686
+  948  yum search vlc
+  949  yum install libbluray.i686
+  950  poweroff
+  951  yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+  952  yum -y install http://linuxdownload.adobe.com/linux/x86_64/adobe-release-x86_64-1.0-1.noarch.rpm
+  953  yum install flash-plugin
+  954  yum install icedtea-web
+  955  yum install vlc smplayer ffmpeg HandBrake-{gui,cli}
+  956  yum install libdvdcss gstreamer{,1}-plugins-ugly gstreamer-plugins-bad-nonfree gstreamer1-plugins-bad-freeworld
+  957  yum update
+  958  yum upgrade
+  959  yum install vlc smplayer ffmpeg HandBrake-{gui,cli}
+  960  yum install gstreamer gstreamer-plugins-base gstreamer-plugins-good gstreamer-plugins-bad-free
+  961  yum install gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg
+  962  yum install mplayer mplayer-gui
+  963  yum install vlc
+  964  ls
+  965  init 6
+  966  yum reinstall http://vault.centos.org/6.5/os/x86_64/Packages/centos-release-6-5.el6.centos.11.1.x86_64.rpm
+  967  yum update
+  968  yum install libgnome-desktop-2.so.11
+  969  yum update
+  970  yum reinstall http://mirror.centos.org/centos/6/os/x86_64/Packages/centos-release-6-6.el6.centos.12.2.x86_64.rpm
+  971  oryum reinstall http://mirror.centos.org/centos/6/os/x86_64/Packages/centos-release-6-6.el6.centos.12.2.x86_64.rpm
+  972  yum reinstall http://mirror.centos.org/centos/6/os/x86_64/Packages/centos-release-6-6.el6.centos.12.2.x86_64.rpm
+  973  yum repolist all
+  974  oryum reinstall http://mirror.centos.org/centos/6/os/x86_64/Packages/centos-release-6-6.el6.centos.12.2.x86_64.rpm
+  975  yum reinstall http://mirror.centos.org/centos/6/os/x86_64/Packages/centos-release-6-6.el6.centos.12.2.x86_64.rpm
+  976  yum update
+  977  find / | grep gthumb-3.2.4-1.el7.nux.x86_64
+  978  find / | grep el7.nux.x86_64
+  979  find / |grep el7.nux.x86_64
+  980  find / |grep el7
+  981  rm /var/tmp/yum-root-OW6iuk/nux-dextop-release-0-5.el7.nux.noarch.rpm 
+  982  find / |grep el7
+  983  yum update
+  984  find / |grep nux
+  985  find / |grep el7
+  986  yum update
+  987  find / |grep gnome
+  988  yum check
+  989  yum clean all
+  990  yum check
+  991  yum clean all
+  992  yum update
+  993  yum search sshd
+  994  yum install openssh-server.86_64
+  995  yum install openssh-server.x86_64
+  996  postfix
+  997  systemctl postfix start
+  998  /etc/init.d/postfix start
+  999  /etc/init.d/postfix reload
+ 1000  history
+ 1001  history > .test.txt
+ 1002  history > ./test.txt
+ 1003  history > ./history.txt

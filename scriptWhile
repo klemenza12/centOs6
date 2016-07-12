@@ -1,0 +1,12 @@
+#!/bin/bash
+
+filename=$1
+
+while [ ! -f $filename ]
+do
+	sleep 4
+	echo "file still not found"
+done
+
+ls -l $filename
+exit 0

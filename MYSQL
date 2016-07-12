@@ -1,0 +1,22 @@
+yum install mysql-server
+mysql -u root -p
+show databases;
+use mysql;
+show tables;
+create database mta;
+use mta;
+create table mail_stat (id INT NOT NULL AUTO_INCREMENT, host VARCHAR(32) NOT NULL, fromaddr VARCHAR(64), date DATETIME, msgid VARCHAR(48), PRIMARY KEY (id));
+
+ INSERT INTO mail_stat(host,fromaddr,date,msgid) VALUES ('192.168.1.101','testlocal',now(),'123589');
+
+SELECT * FROM mail_stat;
+echo "show databases;" "use mta;" "show tables;" "select * from mail_stat;" | mysql -u root
+
+echo "use mta;"  "select * from mail_stat;" | mysql -u root
+
+echo "use mta;"  "update mail_stat set msgid='353824' where id=1;" | mysql -u root
+
+ako iskame da vidime ipAdresa echo $(ifconfig | grep -A 1 eth0 | grep inet | 				cut -f 2 -d ":" | cut -f 1 -d " ")
+
+
+

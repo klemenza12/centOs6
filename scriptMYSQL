@@ -1,0 +1,31 @@
+#!/bin/bash
+
+PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+FILE=/tmp/prog1.log
+MYSQLHOST=192.168.160.36
+MYSQLUSER=root
+MYSQLPASS=''
+MYSQLDB=mta
+
+while read line
+do
+	echo $line | grep "^From: "
+	if [ "$?" -eq 0 ]
+	then
+		FROM=$(echo $line | cut -f 2- -d " ")
+        fi
+	
+        echo $line | grep "^To: "
+        if [ "$?" -eq 0 ]
+        then
+		TO=$(echo $line | cut -f 2- -d " ")
+        fi 
+done
+DATE="now()"
+IPADDRESS=$(ifconfig | grep -A 1 eth0 | grep inet | cut -f 2 -d ":" | cut -f 1 -d " ")
+echo $DATE >> $FILE
+echo $FROM >> $FILE
+SQL="INSERT INTO mail_stat (host, fromaddr, date, msgid) VALUES ('$IPADDRESS', '$FROM', now(), '$TO');"
+echo $SQL >> $FILE
+echo "use mta;" $SQL | mysql -u root
+echo "use mta;"  "select * from mail_stat;" | mysql -u root >> $FILE

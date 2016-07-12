@@ -1,0 +1,9 @@
+#!/bin/bash
+HOUR=$(date)
+UNIXTIME='date'
+if ["$HOUR"="10"]
+then
+	echo "Vreme e za nemski: $UNIXTIME"
+else
+	echo "Ohste ne e vreme: $HOUR"
+fi

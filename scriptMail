@@ -1,0 +1,31 @@
+#!/bin bash
+
+#cat testmail | grep "^From:" | cut -f 2- -d " "
+#cat testmail | grep "^To:" | cut -f 2- -d " "
+#cat testmail | grep "^Date:" | cut -f 2- -d " "
+
+while read line
+do
+	echo $line | grep "^From: "
+        if [ "$?" -eq 0 ]
+	then
+		FROM=$(echo $line | cut -f 2- -d " ")
+	fi
+
+        echo $line | grep "^Date: "
+       	if [ "$?" -eq 0 ]
+        then
+                DATE=$(echo $line | cut	-f 2- -d " ")
+        fi
+ 
+        echo $line | grep "^Message-Id: "
+       	if [ "$?" -eq 0 ]
+        then
+                MSGID=$(echo $line | cut -f 2- -d " ")
+        fi
+        
+done
+$echo $msg
+#echo $FROM
+#echo $DATE
+#echo $MSGID

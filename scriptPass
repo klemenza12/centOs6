@@ -1,0 +1,6 @@
+echo "Please enter you name: "
+read name
+echo "Your name is: $name"
+echo "Please enter your password "
+read -s pass 
+echo "Your password is $pass"
